@@ -35,12 +35,6 @@ class SpreadSheet:
             raise ValueError("Spreadsheet column number must be greater than 0.")
         self._columns = value
         
-    def memory_layout(self):
-        for i in range(self.rows):
-            for j in range(self.columns):
-                print(id(self._table[i][j]), end='\t')
-            print()
-        
     def set_cell_at(self, i:int, j:int, cell:Union[Cell, str]) -> None:
         if not ((0 <= i < self.rows) and (0 <= j < self.columns)):
             raise ValueError(f"Index out of range 'set_cell_at({i}, {j})'.")

@@ -42,23 +42,26 @@ class Cell:
         try:
             return int(self.value)
         except Exception as e:
-            raise ValueError("Couldn't convert the value to the type: int") from e
+            raise ValueError("Couldn't convert the value to the type: int.") from e
         
     def to_float(self) -> float:
         try:
             return float(self.value)
         except Exception as e:
-            raise ValueError("Couldn't convert the value to the type: float") from e
+            raise ValueError("Couldn't convert the value to the type: float.") from e
     
     def to_date(self) -> datetime:
         try:
             return datetime.strptime(self.value, '%m/%d/%Y')
         except Exception as e:
-            raise ValueError("Couldn't convert the value to the type: datetime") from e  
+            raise ValueError("Couldn't convert the value to the type: datetime.") from e  
     
-    def reset(self):
+    def reset(self) -> None:
         self.value = ""
         self.color = Cell.COLOR['white']
         
-    def print_cell(self):
-        Cell.__console.print(self.value, style=Cell.COLOR[self.color]) 
+    def __str__(self):
+        return f'{self.value}'
+    
+    def print_cell(self) -> None:
+        Cell.__console.print(self.value, style=Cell.COLOR[self.color])

@@ -1,5 +1,5 @@
 # <b>Tablo</b>
-<b>Picsart Academy Homework</b>: Simulate Excel Spreadsheet simulation in terminal.<br><br><br>
+<b>Picsart Academy Homework</b>: Simulate Excel Spreadsheet in terminal.<br><br><br>
 
 ## Installation
 1. <b>Create a virtual environment: </b> `python3 -m venv venv`

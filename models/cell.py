@@ -60,9 +60,3 @@ class Cell:
     def reset(self) -> None:
         self.value = ""
         self.color = Cell.COLOR['white']
-        
-    def __str__(self):
-        return f'{self.value}'
-    
-    def print_cell(self) -> None:
-        Cell.__console.print(self.value, style=Cell.COLOR[self.color])

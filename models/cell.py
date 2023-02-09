@@ -8,7 +8,8 @@ class Cell:
         'red': 'bright_red',
         'blue': 'dark_blue',
         'green': 'green3',
-        'purple': 'purple3'
+        'purple': 'purple3',
+        'yellow':'bright_yellow'
     }
     
     __console = Console(highlight=False)

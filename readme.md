@@ -37,3 +37,4 @@ sheet.remove_row(0)
 ### Main
 <b>World Chess Champions</b><br>
 
+![Screenshot from 2023-02-10 01-38-03](https://user-images.githubusercontent.com/99897064/217945554-0d8feae6-75e5-40ce-a785-74cc2fbfb8ac.png)

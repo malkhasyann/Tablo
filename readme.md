@@ -5,7 +5,7 @@
 1. <b>Create a virtual environment: </b> `python3 -m venv venv`
 2. <b>Activate the virtual environment: </b> `source venv/bin/activate`
 3. <b>Install requirements: </b> `pip3 install -r requirements.txt`
-<br><br><br>
+<br><br>
 
 ## Usage
 
@@ -33,7 +33,9 @@ sheet.swap_columns(0, 1)
 
 sheet.remove_row(0)
 ```
-<br><br><br>
+
+<br>
+
 ### Main
 <b>World Chess Champions</b><br>
 
